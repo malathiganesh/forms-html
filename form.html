@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>FORMS</h1>
+    <form target="_blank">
+        <h3> TEXT</h3><br>
+        <label for="fname">Name:</label><br>
+        <input type="text" id="fname" name="fname" value="malathi" disabled><br><br>
+        <h3>PASSWORD</h3><br>
+        <label for="pwd">Password:</label><br>
+        <input type="password" id="pwd" name="pwd">
+        <h3>RADIO BUTTON</h3>
+        <input type="radio" id="red" name="color" value="red">
+        <label for="red">red</label><br>
+        <input type="radio" id="blue" name="color" value="blue">
+        <label for="blue">blue</label><br>
+        <input type="radio" id="pink" name="color" value="pink">
+        <label for="pink">pink</label><br><br>
+        <h3>CHECK BOX</h3>
+        <input type="checkbox" id="fruit" name="fruit" value="Apple">
+        <label for="fruit"> Apple</label><br>
+        <input type="checkbox" id="fruit1" name="fruit1" value="Banana">
+        <label for="fruit1"> Banana</label><br>
+        <input type="checkbox" id="fruit2" name="fruit2" value="Mango">
+        <label for="fruit2"> Mango</label><br>
+        <h3>COLOR</h3>
+        <label for="favcolor">Select your favorite color:</label>
+        <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+        <h3>DATE</h3>
+        <label for="dob">DOB:</label>
+        <input type="date" id="birthday" name="dob">
+        <h6>MIN & MAX IN DATE</h6>
+        <label for="datemin">Enter a date after 2000-01-01:</label>
+        <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+        <label for="datemax">Enter a date before 1980-01-01:</label>
+        <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+        <h3>DATE TIME-LOCAL</h3>
+        <label for="dt">Date and Time:</label>
+        <input type="datetime-local" id="dt" name="dt">
+        <h3>MONTH</h3>
+        <input type="month" id="bdaymonth" name="bdaymonth">
+        <h3>NUMBER</h3>
+        <label for="qty">Number between 1 and 5:</label>
+        <input type="number" id="qty" name="qty" min="1" max="5">
+        <h3>RANGE</h3>
+        <label for="vol">Range between 0 and 50:</label>
+        <input type="range" id="vol" name="vol" min="0" max="50">
+        <h3>SEARCH</h3>
+        <label for="gsearch">Search:</label>
+        <input type="search" id="s" name="s">
+        <h3>TIME</h3>
+        <label for="appt">Time:</label>
+        <input type="time" id="appt" name="appt">
+        <h3>WEEK</h3>
+        <label for="week">Week:</label>
+        <input type="week" id="week" name="week">
+        <h3>TEL TYPE</h3>
+        <label for="phone">Phone number:</label><br><br>
+        <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+        <h3>EMAIL</h3>
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email">
+        <h3>URL</h3>
+        <label for="homepage">URL:</label>
+        <input type="url" id="url1" name="url1">
+        <h3>FILE</h3>
+        <input type="file" id="myfile" name="myfile"><br><br>
+        <h3>SELECT ELEMENT</h3>
+        <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+        <h3>TEXTAREA</h3>
+        <label for="msg">Textarea:</label>
+        <textarea name="mgs" rows="3" cols="15"></textarea><br><br>
+        <h3>FIELDSET & LEGEND</h3>
+        <fieldset>
+            <legend>Fieldset & legend:</legend>
+        </fieldset>
+        <h3>DATALIST</h3>
+        <input list="d" name="d">
+        <datalist id="d">
+          <option value="Internet Explorer">
+          <option value="Firefox">
+          <option value="Chrome">
+        </datalist>
+        <h3>OPTGROUP</h3>
+        <select  name="cars" id="cars">
+            <optgroup label="Swedish Cars">
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+            </optgroup>
+            <optgroup label="German Cars">
+              <option value="mercedes">Mercedes</option>
+              <option value="audi">Audi</option>
+            </optgroup>
+          </select>
+        <h3>IMAGE</h3>
+        <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
+        <h3>SUBMIT</h3><br>
+        <input type="submit" value="Submit">
+        <h3>RESET</h3>
+        <input type="reset">
+        <h3>BUTTON</h3>
+        <input type="button" onclick="alert('HiiiiiiiI <3 !')" value="ClicK mE :)">
+    </form><br><br>
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+      <input type="number" id="a" name="a" value="50">+
+      <input type="number" id="b" name="b" value="50">=
+      <output name="x" for="a b"></output>
+    </form>
+</body>
+</html>
